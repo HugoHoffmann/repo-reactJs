@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { FaGithubAlt, FaPlus, FaSpinner } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import { Container, Form, SubmitButton, List } from './styles';
+import { Form, SubmitButton, List } from './styles';
 import api from '../../services/api';
+import Container from '../../components/Container';
 
 export default class Main extends Component {
     state = {
@@ -50,7 +51,7 @@ export default class Main extends Component {
         }
 
         this.setState({ 
-            repositories: [... repositories, data],
+            repositories: [...repositories, data],
             newRepo: '',
             loading: false,
         })
@@ -66,7 +67,7 @@ export default class Main extends Component {
                 <Form onSubmit={this.handleSubmit} >
                     <input 
                         type="text" 
-                        placeholder="adicionar repositório"
+                        placeholder="user/repo"
                         value={newRepo}
                         onChange={this.handleInputChange}
                     />
