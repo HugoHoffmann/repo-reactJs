@@ -1,1 +1,2 @@
-# repo-reactJs
+
+A basic application using reactJs to search and list repositories
