@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to clone pipefy 👋</h1>
+<h1 align="center">Welcome to repo-reactJs 👋</h1>
 <p>
   A basic application using reactJs to search and list repositories
 </p>
